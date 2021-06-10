@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  box-sizing: border-box;
+}
+
+.main-container{
+  margin-top: 80px;
+  padding: 2% 16%;
+}
+.fiters-container{
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+.filters-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.filters{
+  padding: 6px 14px;
+  font-size: .75em;
+  color: #0084ff;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  margin: 5px;
+  cursor: pointer;
+}
+.active-filter{
+  color: #fff;
+  background: #0084ff;
+  background: linear-gradient(269deg,#0048ff,#0096ff);
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards{
+  max-width: 31.33%;
+  min-height: 25em;
+  height: auto;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1em;
+  background-color: #fff;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  border: 1px solid rgba(0,168,255,.3);
+}
+.card-image-container{
+  height: 11.5em;
+}
+.card-image-container>img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-info{
+  padding: .7em 1.5em;
+}
+.card-heading{
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.14;
+  height: 2.4em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-description{
+  height: 100px;
+  opacity: .5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: .35px;
+  margin: .3em 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.author-name{
+  font-size: .9em;
+  font-weight: 500;
+  line-height: 2;
+  color: #0096ff;
+  margin-right: 5px;
+}
+.date{
+  margin-left: 5px;
+  font-size: .9em;
+  line-height: 2;
+}
